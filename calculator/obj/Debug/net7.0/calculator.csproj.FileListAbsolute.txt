@@ -1,0 +1,15 @@
+/Users/laythen-liva/Projects/calculator/calculator/bin/Debug/net7.0/calculator
+/Users/laythen-liva/Projects/calculator/calculator/bin/Debug/net7.0/calculator.deps.json
+/Users/laythen-liva/Projects/calculator/calculator/bin/Debug/net7.0/calculator.runtimeconfig.json
+/Users/laythen-liva/Projects/calculator/calculator/bin/Debug/net7.0/calculator.dll
+/Users/laythen-liva/Projects/calculator/calculator/bin/Debug/net7.0/calculator.pdb
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.csproj.AssemblyReference.cache
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.AssemblyInfoInputs.cache
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.AssemblyInfo.cs
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.csproj.CoreCompileInputs.cache
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.dll
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/refint/calculator.dll
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.pdb
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/calculator.genruntimeconfig.cache
+/Users/laythen-liva/Projects/calculator/calculator/obj/Debug/net7.0/ref/calculator.dll
