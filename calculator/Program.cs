@@ -21,7 +21,7 @@
             int indexDivide = 0;
             for (int i = 0; i < numberOfDivideOperand; i++)
             {
-                indexDivide = Array.IndexOf(formulas, "*", indexDivide);
+                indexDivide = Array.IndexOf(formulas, "/", indexDivide);
                 list.Insert(indexDivide - 1, "(");
                 list.Insert(indexDivide + 3, ")");
             }
@@ -30,6 +30,14 @@
             list.Insert(list.Count - 1, ")");
 
             return formulas = list.ToArray();
+        }
+        
+        public int CountMixOperand(string[] formulas)
+        {
+            int numberOfPlusMinusOperand = formulas.Count(x => x == "+" || x == "-");
+            if (numberOfPlusMinusOperand == 0) return 0;
+
+            return formulas.Distinct().Count(x => x == "+" || x == "-" || x == "*" || x == "/");
         }
 
         public double CalculateTotal(string[] formulas)
@@ -74,7 +82,7 @@
 
             if (numberOfGroup == 0)
             {
-                int numberOfFlatOperand = formulas.Distinct().Count(x => x == "+" || x == "-" || x == "*" || x == "/");
+                int numberOfFlatOperand = CountMixOperand(formulas);
                 if (numberOfFlatOperand > 1)
                 {
                     formulas = PrioOperand(formulas);
@@ -92,7 +100,7 @@
                     int indexNext = Array.IndexOf(formulas, ")", index);
                     string[] innerBracket = formulas[(index+1)..indexNext];
 
-                    int numberOfOperand = innerBracket.Distinct().Count(x => x == "+" || x == "-" || x == "*" || x == "/");
+                    int numberOfOperand = CountMixOperand(innerBracket);
                     if (numberOfOperand > 1)
                     {
                         innerBracket = PrioOperand(innerBracket);
